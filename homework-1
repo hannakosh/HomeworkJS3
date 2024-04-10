@@ -1,0 +1,16 @@
+const treeHeight = 8;
+
+let maxStarAmount = treeHeight * 2 - 1;
+for (let rowNumber = 1; rowNumber <= treeHeight; rowNumber++) {
+  let star = '';
+  let starAmount = rowNumber * 2 - 1;
+  let spaceAmount = (maxStarAmount - starAmount) / 2;
+  for (let i = 0; i < spaceAmount; i++) {
+    star = star + ' ';
+  }
+  for (let i = 0; i < starAmount; i++) {
+    star = star + '*';
+  }
+
+  console.log(star);
+}

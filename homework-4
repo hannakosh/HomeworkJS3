@@ -1,0 +1,12 @@
+let userEntersNumber = 0;
+
+while (userEntersNumber <= 100) {
+  userEntersNumber = prompt('Please enter a number greater than 100');
+  if (userEntersNumber === '' || userEntersNumber === null) {
+    break;
+  }
+  if (isNaN(userEntersNumber)) {
+    userEntersNumber = 0;
+  }
+}
+console.log('Last input ' + userEntersNumber);
